@@ -126,6 +126,11 @@ set overtime_days_taken 0
 set overtime_days_balance [db_string get_data "select overtime_balance from im_employees where employee_id = :user_id_from_search" -default 0]
 
 db_multirow -extend { days_absence days_booking } overtime_balance_multirow overtime_balance $overtime_sql {
+
+	if { ![info exists days] || "" == $days  } {
+		set days 0 
+	}    	
+
 	if { $absence_p } {
 		set overtime_days_taken [expr $overtime_days_taken + $days]
 		set overtime_days_left [expr $overtime_days_left - $days]
