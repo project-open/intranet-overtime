@@ -18,7 +18,7 @@ ad_library {
 # Constants
 # ---------------------------------------------------------------------
 
-# ad_proc -public im_absence_type_vacation {} { return 5000 }
+# ad_proc -public im_user_absence_type_vacation {} { return 5000 }
 
 # ---------------------------------------------------------------------
 # Functions
