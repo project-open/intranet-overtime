@@ -31,7 +31,7 @@ ad_proc -public im_overtime_balance_component {
     Returns a HTML component showing the number of days left
     for the user
 } {
-    set current_user_id [ad_get_user_id]
+    set current_user_id [ad_conn user_id]
     # This is a sensitive field, so only allows this for the user himself
     # and for users with HR permissions.
 
@@ -55,7 +55,7 @@ ad_proc -public im_rwh_balance_component {
     Returns a HTML component showing the number of days left
     for the user
 } {
-    set current_user_id [ad_get_user_id]
+    set current_user_id [ad_conn user_id]
     # This is a sensitive field, so only allows this for the user himself
     # and for users with HR permissions.
 
