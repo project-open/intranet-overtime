@@ -16,10 +16,9 @@
         <summary>Supports for management of overtime and &quot;Reduction in Working Hours&quot; (RWH)</summary>
         <release-date>2016-11-15</release-date>
         <vendor url="http://www.project-open.com">]project-open[</vendor>
+	<license>]project-open[ Free License (FL)</license>
         <maturity>0</maturity>
-
         <provides url="intranet-overtime" version="0.1d"/>
-
         <callbacks>
         </callbacks>
         <parameters>
